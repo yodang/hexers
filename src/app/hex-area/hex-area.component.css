@@ -1,0 +1,22 @@
+.hex-grid {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    /*overflow: scroll;*/
+    /*list-style-type: none;*/
+}
+
+.hexLine {
+  display: flex;
+  width: 100%;
+}
+.hexLine:nth-child(2n+1)
+{
+  margin-left: 50px;
+}
+
+@media (min-width:1201px) { /* <- 5-4  hexagons per row */
+    .hex-grid{
+      padding-bottom: 4.4%
+    }
+}
